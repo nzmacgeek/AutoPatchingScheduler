@@ -111,6 +111,6 @@ def patchGroups(key = key, prefix = prefix, startdate = None):
 			tagGroupSystem( key, system['id'])
 			scheduleOutstandingErrata( key, system['id'], group['schedule'], group['reboot'])
 
-#patchGroups(key, prefix, startdate)
+patchGroups(key, prefix, startdate)
 
 client.auth.logout(key)
